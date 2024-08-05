@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Front-end Execution Test</title>
+        </head>
+
+        <body>
+            <h1>this is a test</h1>
+            <script>
+                // alert('Hello from the front-end!')
+                fetch('/api/users')
+                .then(response => response.json())
+                .then(users => console.log(users));
+            </script>
+        </body>
+    </html>
